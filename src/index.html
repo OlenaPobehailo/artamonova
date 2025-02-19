@@ -7,25 +7,31 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./scss/main.scss">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <div class="container">
+            <div class="nav-container">
                 <button class="burger-menu" id="burger-menu">
                     <span class="burger-icon"></span>
                     <span class="burger-icon"></span>
                     <span class="burger-icon"></span>
                 </button>
+
                 <span class="logo">
-                    <a href="/"> <br /> </a>
+                    <a href="/">
+                        <span class="iconify" data-icon="mdi:bullseye-arrow"></span>
+                    </a>
+
                 </span>
 
                 <ul class="nav-menu">
                     <li><a href="#about">Про мене</a></li>
-                    <li><a href="#services">Послуги</a></li>
                     <li><a href="#advantages">Переваги</a></li>
+                    <li><a href="#services">Послуги</a></li>
                     <li><a href="#algorithm">Алгоритм роботи</a></li>
                     <li><a href="#testimonials">Відгуки</a></li>
                     <li><a href="#contact">Контакти</a></li>
@@ -35,50 +41,239 @@
     </header>
 
 
+
     <main>
-        <section class="hero section">
-
-        </section>
-
-        <section id="about" class="section ">
+        <section id="hero" class="section hero">
             <div class="container">
-                <h2>Про мене</h2>
+                <div>
+                    <h1>ТАРГЕТОЛОГ-ЕКСПЕРТ</h1>
+                    <p>Digital послуги для розвитку бізнесу</p>
+                    <a href="https://t.me/yuliia_artamonova" class="btn">Дізнатися більше</a>
+                </div>
+                <div style="width: 50%;">
+                    <img src="https://fakeimg.pl/600x400/ededed/909090?text=+" alt=""
+                        style="max-width: 100%; height: auto;">
+
+                </div>
             </div>
         </section>
 
-        <section id="services" class="section">
+        <section id="about" class="section about">
             <div class="container">
-                <h2>Послуги</h2>
+                <h2 class="section-title sr-only">Про мене</h2>
+                <p>Я - Юлія, таргетолог з юридичним мисленням. Мій професійний шлях розпочався у сфері юриспруденції – я
+                    маю юридичну освіту та досвід роботи в суді, що розвинуло аналітичне мислення, уважність до
+                    деталей і стратегічний підхід. У таргетингу це допомагає створювати ефективні кампанії, які
+                    приносять клієнтів, а не просто «зливають» бюджет.
+                </p>
+
             </div>
         </section>
 
-        <section id="advantages" class="section">
+        <section id="advantages">
             <div class="container">
-                <h2>Переваги</h2>
+                <h2 class="section-title">Переваги роботи зі мною</h2>
+                <ul class="advantages-list">
+                    <li class="advantage-item">
+                        <span class="icon">
+                            <span class="iconify" data-icon="mdi:briefcase-check-outline"></span>
+                        </span>
+                        <p>Комплексний підхід – враховую не лише налаштування реклами, а й упаковку профілю, контент та
+                            загальну
+                            стратегію просування.</p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="icon">
+                            <span class="iconify" data-icon="mdi:chart-line"></span>
+                        </span>
+                        <p>Аналітичне мислення – використовую цифри та дані для прийняття рішень, а не працюю навмання.
+                        </p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="icon">
+                            <span class="iconify" data-icon="mdi:layers-triple-outline"></span>
+                        </span>
+                        <p>Досвід у різних нішах – знаю, як працювати з різними продуктами та послугами, тому швидко
+                            адаптуюсь під ваш
+                            бізнес.</p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="icon">
+                            <span class="iconify" data-icon="mdi:shield-check-outline"></span>
+                        </span>
+                        <p>Юридична грамотність – розумію алгоритми Facebook та Meta, що допомагає уникати блокувань
+                            рекламних кабінетів
+                            і правильно реагувати на обмеження.</p>
+                    </li>
+                    <li class="advantage-item">
+                        <span class="icon">
+                            <span class="iconify" data-icon="mdi:lightbulb-on-outline"></span>
+                        </span>
+                        <p>Простота та доступність – пояснюю складні речі простою мовою, без «води» та незрозумілих
+                            термінів.</p>
+                    </li>
+                </ul>
+
+
             </div>
         </section>
+
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title">Послуги</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <span class="icon">
+                                <span class="iconify" data-icon="mdi:target-variant"></span>
+                            </span>
+                            <h3>Налаштування таргетованої реклами</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span> Аналіз ніші та конкурентів
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span> Підбір цільової аудиторії
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span> Створення рекламної стратегії та креативів
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <span class="icon">
+                                <span class="iconify" data-icon="mdi:comment-question-outline"></span>
+                            </span>
+                            <h3>Консультації з таргету</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span>
+                                Консультація-навчання – допомога у самостійному запуску реклами
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span>
+                                Консультація з упаковки профілю – аналіз сторінки та рекомендації
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check">
+                                    </span>
+                                </span>
+                                Консультація-аудит – розбір рекламних кампаній, пошук помилок
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span>
+                                Консультація з розблокування рекламного кабінету
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <span class="icon">
+                                <span class="iconify" data-icon="mdi:plus-box-multiple-outline"></span>
+                            </span>
+                            <h3>Додаткові послуги</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span>
+                                Налаштування чат-боту – автоматизація відповідей у Direct
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span>
+                                Створення рекламних креативів – підбір зображень, написання текстів
+                            </li>
+                            <li>
+                                <span class="icon">
+                                    <span class="iconify" data-icon="mdi:check"></span>
+                                </span>
+                                Розробка рекламної стратегії – план просування з офферами
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="target-audience">
+                    <h3>Для кого підходять ці послуги</h3>
+                    <ul>
+                        <li>
+                            <span class="icon">
+                                <span class="iconify" data-icon="mdi:check"></span>
+                            </span>
+                            Власникам бізнесів, які хочуть масштабуватись
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <span class="iconify" data-icon="mdi:check"></span>
+                            </span>
+                            Експертам, які розвивають блог, залучають підписників
+                        </li>
+                        <li>
+                            <span class="icon">
+                                <span class="iconify" data-icon="mdi:check"></span>
+                            </span>
+                            Тим, хто хоче самостійно запускати рекламу
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
 
         <section id="algorithm" class="section">
             <div class="container">
-                <h2>Алгоритм роботи</h2>
+                <h2 class="section-title">Алгоритм роботи</h2>
             </div>
         </section>
 
         <section id="testimonials" class="section">
             <div class="container">
-                <h2>Відгуки</h2>
+                <h2 class="section-title">Відгуки</h2>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section contact">
             <div class="container">
-                <h2>Контакти</h2>
+                <h2 class="section-title">Готові масштабувати свій бізнес через рекламу?</h2>
+                <p>Залишайте заявку – підберемо найкраще рішення для вашого бізнесу!</p>
+                <a href="https://t.me/yourusername" class="cta-button">Залишити заявку</a>
+
+                <div class="contacts">
+                    <p><a href="https://t.me/yuliia_artamonova">Телеграм</a></p>
+                    <p><a href="https://www.instagram.com/yuliia.artamonova/">Instagram</a></p>
+                    <p><a href="mailto:artamonova.yuliia@gmail.com">artamonova.yuliia@gmail.com</a></p>
+                </div>
             </div>
         </section>
     </main>
 
+
     <footer>
-        <p>&copy; 2025 Artamonova</p>
+        <p>&copy; 2025</p>
     </footer>
     <script type="module" clear src="./js/index.js"></script>
 </body>

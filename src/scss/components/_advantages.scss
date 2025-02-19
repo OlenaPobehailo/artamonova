@@ -1,0 +1,51 @@
+#advantages {
+  padding: 3rem 0;
+  background-color: #f9fafb;
+
+  @media (min-width: 768px) {
+    padding: 5rem 0;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      font-size: 2.25rem;
+    }
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      gap: 2rem;
+    }
+
+    .advantage-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.125rem;
+      color: #374151;
+
+      .icon {
+        color: $light-green-color;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
