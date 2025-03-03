@@ -5,71 +5,96 @@
   justify-content: space-between;
   text-align: center;
   color: $light-green-color;
-  background: linear-gradient(315deg, $white-color, $white-color),
-    center/cover no-repeat;
+  // background: linear-gradient(120deg, #00002580, #0000257e) center/cover no-repeat, url(../assets//images/hero-bg.svg  ) center/cover no-repeat, linear-gradient(120deg, #000025, #000025) center/cover no-repeat, ;
+  background:
+    linear-gradient(120deg, #01010100, #08080910) center/cover no-repeat,
+    url(../assets/images/hero-bg1.svg  ) center/cover no-repeat, linear-gradient(120deg, #ededed, #ededed) center/cover no-repeat, ;
+  // linear-gradient(120deg, #000025, #000025) center/cover no-repeat ;
 
-  .container {
+  // background:
+  //   url(../assets/images/hero-bg.svg  ) center/cover no-repeat,
+  //   linear-gradient(120deg, #cbcaca, #cbcaca) center/cover no-repeat;
+
+  .hero-container {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     max-width: 1440px;
     padding: 0 16px;
     box-sizing: border-box;
-  }
+    text-align: center;
 
-  @media (max-width: 767px) {
-    .container {
-      flex-direction: column;
+    @media (max-width: 767px) {
       align-items: center;
       padding: 0 10px;
-    }
-  }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-      flex-direction: row;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
       justify-content: space-between;
       padding: 0 20px;
     }
-  }
 
-  @media (min-width: 1024px) {
-    .container {
-      flex-direction: row;
+    @media (min-width: 1024px) {
       justify-content: space-between;
       align-items: center;
-      gap: 20px;
       padding: 0 30px;
+
     }
   }
 
-  div {
-    // width: 50%;
-    text-align: left;
-  }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    // color: #ffffff;
+    color: $blue-color;
+
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 3rem;
+    }
   }
 
   p {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 2.5rem;
+    }
   }
 
   .btn {
-    background-color: #005f6b;
+    width: 100%;
+    background-color: $blue-color;
     color: #ededed;
     padding: 10px 42px;
     border-radius: 8px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 
+    @media (min-width: 420px) {
+      width: auto;
+    }
+
+    @media (min-width: 768px) {
+      width: auto;
+      font-size: 1.5rem;
+    }
+
     &:hover {
-      background-color: #0d9488;
+      background-color: $light-green-color;
       color: #ffffff;
     }
 
@@ -78,12 +103,3 @@
     }
   }
 }
-img {
-  display: none;
-
-  @media (min-width: 768px) {
-    display: block;
-  }
-}
-
-

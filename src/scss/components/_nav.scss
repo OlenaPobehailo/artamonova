@@ -4,7 +4,7 @@ header {
   left: 0;
   width: 100%;
   min-height: 50px;
-  background-color: $dark-green-color;
+  background-color: $blue-color;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
@@ -37,6 +37,7 @@ header {
   background-color: $white-color;
   transition: all 0.3s ease;
 }
+
 .burger-menu:hover .burger-icon {
   background-color: $light-beige-color;
   color: $white-color;
@@ -59,10 +60,20 @@ header {
   color: $white-color;
   text-decoration: none;
   font-size: 18px;
+
+  transition: all 0.3s ease;
 }
 
-.nav-menu li a:hover {
-  color: $light-beige-color;
+.nav-menu li {
+  transition: all 0.3s ease;
+}
+
+.nav-menu li:hover a {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.nav-menu li:hover {
   transform: scale(1.05);
 }
 

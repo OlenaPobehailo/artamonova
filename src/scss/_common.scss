@@ -29,8 +29,27 @@ body {
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
+
   @media (min-width: 768px) {
     font-size: 2.25rem;
   }
 }
 
+.container {
+  min-width: 320px;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 2rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 1024px;
+    padding: 0 3rem;
+  }
+
+  // outline: 1px solid red;
+}
