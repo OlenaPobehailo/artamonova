@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 #services {
   padding: 3rem 0;
   background-color: #ffffff;
@@ -30,11 +32,9 @@
     gap: 2rem;
     justify-content: center;
 
-    @media (min-width: 768px) {
-    }
+    @media (min-width: 768px) {}
 
-    @media (min-width: 900px) {
-    }
+    @media (min-width: 900px) {}
 
     .service-card {
       width: 100%;
@@ -91,6 +91,7 @@
           font-size: 1.125rem;
           color: #374151;
           margin-bottom: 0.5rem;
+
           .icon {
             font-size: 1.5rem;
             color: $light-green-color;

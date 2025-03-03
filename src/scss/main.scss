@@ -1,15 +1,15 @@
-@import "variables";
-@import "fonts";
-@import "reset";
-@import "common";
+@use "variables";
+@use "fonts";
+@use "reset";
+@use "common";
 
-@import "components/nav";
-@import "components/hero";
-@import "components/about";
-@import "components/services";
-@import "components/advantages";
+@use "components/nav";
+@use "components/hero";
+@use "components/about";
+@use "components/services";
+@use "components/advantages";
 // @import "components/algorithm";
 // @import "components/testimonials";
-@import "components/contact";
-@import "components/footer";
+@use "components/contact";
+@use "components/footer";
 
