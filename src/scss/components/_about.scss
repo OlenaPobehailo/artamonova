@@ -1,8 +1,11 @@
 @use "../variables" as *;
 
 .about {
-
+margin-top: -48px;
   .about-container {
+    background-color: #ffffff;
+    max-width: 90%;
+
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
@@ -10,6 +13,11 @@
       gap: 2rem;
     }
   }
+
+  // .about-container{
+  //   padding-top: 3rem;
+  //       padding-bottom: 3rem;
+  // }
 
   p {
     font-size: 1rem;

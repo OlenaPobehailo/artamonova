@@ -1,88 +1,80 @@
 @use "../variables" as *;
 
 .hero {
-  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  height: calc(100vh - 50px);
+  padding: 0 1rem;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0), transparent);
+  color: #ffffff;
   text-align: center;
-  color: $light-green-color;
-  // background: linear-gradient(120deg, #00002580, #0000257e) center/cover no-repeat, url(../assets//images/hero-bg.svg  ) center/cover no-repeat, linear-gradient(120deg, #000025, #000025) center/cover no-repeat, ;
-  background:
-    linear-gradient(120deg, #01010100, #08080910) center/cover no-repeat,
-    url(../assets/images/hero-bg1.svg  ) center/cover no-repeat, linear-gradient(120deg, #ededed, #ededed) center/cover no-repeat, ;
-  // linear-gradient(120deg, #000025, #000025) center/cover no-repeat ;
+  line-height: 1.1;
 
-  // background:
-  //   url(../assets/images/hero-bg.svg  ) center/cover no-repeat,
-  //   linear-gradient(120deg, #cbcaca, #cbcaca) center/cover no-repeat;
-
-  .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 0 16px;
-    box-sizing: border-box;
-    text-align: center;
-
-    @media (max-width: 767px) {
-      align-items: center;
-      padding: 0 10px;
-
-    }
-
-    @media (min-width: 768px) and (max-width: 1023px) {
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-
-    @media (min-width: 1024px) {
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 30px;
-
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../assets/images/hero-image.jpg") no-repeat center center/cover;
+    filter: blur(10px);
+    z-index: -1;
   }
 
+  @media screen and (min-width: 768px) {
+    // margin-top: 6px;
+  }
 
   h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    // color: #ffffff;
-    color: $blue-color;
+    width: 80%;
+    margin: 0 auto 1rem;
+    font-size: 24px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    line-height: 1.1;
 
-    @media (min-width: 768px) {
-      font-size: 2.5rem;
+    @media screen and (min-width: 480px) {
+      font-size: 32px;
     }
 
-    @media (min-width: 1440px) {
-      font-size: 3rem;
+    @media screen and (min-width: 768px) {
+      font-size: 36px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 48px;
     }
   }
 
   p {
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 48px;
+    font-size: 16px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 
-    @media (min-width: 768px) {
-      font-size: 2rem;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 56px;
+      font-size: 20px;
     }
 
-    @media (min-width: 1440px) {
-      font-size: 2.5rem;
+    @media screen and (min-width: 1024px) {
+      font-size: 24px;
+      margin-bottom: 72px;
     }
   }
 
   .btn {
     width: 100%;
-    background-color: $blue-color;
-    color: #ededed;
+    color: $blue-color;
+    background-color: #ededed;
     padding: 10px 42px;
+    border-color: 1px solid $blue-color;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 
@@ -92,12 +84,15 @@
 
     @media (min-width: 768px) {
       width: auto;
-      font-size: 1.5rem;
+      font-size: 20px;
     }
 
     &:hover {
-      background-color: $light-green-color;
+      background-color: $blue-color-hover;
       color: #ffffff;
+      border: 1px solid #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
     }
 
     &:active {

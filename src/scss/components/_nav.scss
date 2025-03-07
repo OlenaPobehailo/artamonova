@@ -41,9 +41,7 @@ header {
 }
 
 .burger-menu:hover .burger-icon {
-  background-color: $light-beige-color;
-  color: $white-color;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .logo a {
@@ -90,7 +88,7 @@ header {
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: $dark-green-color;
+    background-color: $blue-color;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -104,8 +102,7 @@ header {
     display: block;
 
     &:hover {
-      color: $light-beige-color;
-      transform: scale(1.01);
+      transform: scale(1.02);
     }
   }
 

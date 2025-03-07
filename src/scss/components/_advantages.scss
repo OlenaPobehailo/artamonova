@@ -1,18 +1,11 @@
 @use "../variables" as *;
 
-#advantages {
+.advantages {
   padding: 3rem 0;
-  background-color: $main-bg;
+  background-color: $light-accent;
 
   @media (min-width: 768px) {
-    padding: 5rem 0;
-  }
-
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    text-align: center;
+    // padding: 5rem 0;
   }
 
   h2 {
@@ -26,27 +19,59 @@
   }
 
   .advantages-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 48rem;
-    margin: 0 auto;
-    text-align: left;
-
-    @media (min-width: 768px) {
-      gap: 2rem;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    column-gap: 16px;
+    row-gap: 16px;
+    justify-items: center;
+    align-items: center;
 
     .advantage-item {
+      align-self: center;
       display: flex;
-      align-items: center;
-      gap: 1rem;
-      font-size: 1.125rem;
+      flex-direction: column;
+      font-size: 16px;
       color: #374151;
+      background-color: #fff;
+      padding: 16px;
+      height: 100%;
+      width: 90%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
 
-      .icon {
-        color: $light-green-color;
-        font-size: 2.5rem;
+      @media (min-width: 768px) {
+        padding: 20px;
+      }
+
+      @media (min-width: 1024px) {
+        padding: 24px;
+      }
+
+      &:hover .advantage-icon {
+        background-color: $blue-color;
+        scale: 1.1;
+      }
+
+      .advantage-icon {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        padding: 12px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: $light-green-color;
+        font-size: 3rem;
+        margin: 0 auto 24px;
+        transition: all 0.3s ease-in-out;
+      }
+
+
+
+      h3 {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 500;
+        margin-bottom: 8px;
       }
     }
   }

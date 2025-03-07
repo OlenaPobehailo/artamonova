@@ -1,11 +1,12 @@
+@use "./variables" as *;
 
 body {
   font-family: Montserrat, sans-serif;
 }
 
 .section {
-  padding: 50px 0;
-  min-height: 50vh;
+  // padding: 50px 0;
+  // min-height: 50vh;
 }
 
 .hero {
@@ -30,6 +31,7 @@ body {
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
+  color: $blue-color;
 
   @media (min-width: 768px) {
     font-size: 2.25rem;
@@ -38,18 +40,25 @@ body {
 
 .container {
   min-width: 320px;
-  padding: 0 2rem;
+  width: 100%;
+  padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  // background-color: #ffffff;
+
+  @media screen and (min-width: 420px) {
+    width: 90%;
+    padding: 2rem;
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding: 0 2rem;
+    padding: 2rem;
   }
 
   @media screen and (min-width: 1024px) {
     width: 1024px;
-    padding: 0 3rem;
+    padding: 3rem;
   }
 
   // outline: 1px solid red;
