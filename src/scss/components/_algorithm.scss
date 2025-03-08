@@ -1,0 +1,129 @@
+@use "../variables" as *;
+
+.algorithm {
+    padding: 3rem 0;
+    background-color: #f8fafc;
+
+    @media (min-width: 768px) {
+        padding: 5rem 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+
+.point-list {
+    padding: 24px 32px 32px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+    @media (min-width: 768px) {
+        padding: 24px 64px 32px;
+    }
+
+    .point {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 36px;
+        position: relative;
+
+        @media (min-width: 480px) {
+            padding: 24px 48px;
+        }
+
+        @media (min-width: 768px) {
+            padding: 24px 48px;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 32px 64px;
+        }
+
+
+
+        &:first-child {
+            .point-index {
+                top: auto;
+                bottom: 0;
+                transform: translate(-50%, 2px) !important;
+            }
+        }
+
+        &:last-child {
+            .point-index {
+                top: 0;
+                transform: translate(50%, -2px) !important;
+            }
+        }
+
+        &:not(:last-child) {
+            border-bottom: 2px solid $blue-color;
+        }
+
+        &:nth-child(odd) {
+            align-items: flex-start;
+
+            &:not(:first-child) {
+                border-left: 2px solid $blue-color;
+            }
+
+            .point-index {
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        &:nth-child(even) {
+            align-items: flex-end;
+
+            &:not(:last-child) {
+                border-right: 2px solid $blue-color;
+            }
+
+            .point-index {
+                right: 0;
+                transform: translate(50%, -50%);
+            }
+        }
+
+        .point-index {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            background: $blue-color;
+            border: 2px solid $blue-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            padding: 24px;
+            font-weight: bold;
+            color: #FFFFFF;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .point-label {
+            flex: 1 0 100%;
+            width: 100%;
+            margin-bottom: 4px;
+            font-size: 16px;
+
+            @media (min-width: 480px) {
+                font-size: 20px;
+            }
+
+
+            @media (min-width: 768px) {
+                flex: 1 0 50%;
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,11 +1,11 @@
 @use "../variables" as *;
 
-#services {
+.services {
   padding: 3rem 0;
   background-color: #ffffff;
 
   @media (min-width: 768px) {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
 
   .container {
@@ -17,7 +17,7 @@
   h2 {
     font-size: 1.875rem;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: 32px;
     text-align: center;
 
     @media (min-width: 768px) {
@@ -28,38 +28,39 @@
   .services-list {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 8px;
     padding: 0;
   }
 
   .tabs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 2px solid $light-green-color;
-    line-height: 1;
+    display: none;
 
     @media (min-width: 768px) {
+      display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: center;
       gap: 10px;
+      border-bottom: 2px solid $blue-color;
     }
   }
 
   .tab-button {
     height: 56px;
     background: white;
-    color: $light-green-color;
+    color: $blue-color;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     width: 100%;
-    border-left: 2px solid $light-green-color;
-    border-right: 2px solid $light-green-color;
-    border-top: 2px solid $light-green-color;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-left: 2px solid $blue-color;
+    border-right: 2px solid $blue-color;
+    border-top: 2px solid $blue-color;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    font-weight: 600;
+    line-height: 1;
 
     @media (min-width: 768px) {
       width: 33%;
@@ -69,79 +70,93 @@
 
   .tab-button:hover,
   .tab-button.active {
-    background: $dark-green-color;
+    background: $blue-color;
     color: white;
   }
 
   .tab-content {
-    display: none;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
+    display: block;
+    padding: 36px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+    background-color: #f8fafc;
+    width: 90%;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
+      display: none;
       margin: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .service-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 30%;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 100px;
+
+      @media (min-width: 768px) {
+        height: 150px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      width: 30%;
+      flex-grow: 0;
+
     }
   }
 
   .tab-content.active {
-    display: block;
-  }
 
-  .services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
 
-    @media (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+      display: flex;
       flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .service-card {
+      justify-content: start;
+      align-items: center;
+      gap: 24px;
       width: 100%;
-      background: #ffffff;
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      text-align: left;
-      transition: transform 0.3s ease;
-
-      @media (min-width: 768px) {
-        width: calc(50% - 1.5rem);
-      }
-
-      @media (min-width: 1440px) {
-        width: calc(30% - 3rem);
-      }
-
-      &:hover {
-        transform: translateY(-5px);
-      }
-
-      .icon {
-        font-size: 2rem;
-        color: #10b981;
-        display: block;
-      }
-
-      .service-card-header {
-        display: flex;
-        gap: 1rem;
-
-        h3 {
-          font-size: 1.2rem;
-          font-weight: bold;
-          margin-bottom: 1rem;
-        }
-
-        .icon.iconify {
-          font-size: 1rem;
-          fill: #10b981;
-          margin-bottom: 1rem;
-        }
-      }
+      padding: 48px;
+      border: 2px solid $blue-color;
+      border-top: none;
+      font-size: 20;
     }
+
+
+
+  }
+}
+
+.service-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+
+  }
+}
+
+.service-info {
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
   }
 }

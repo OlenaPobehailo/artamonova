@@ -139,12 +139,12 @@ header {
   .iconify {
     font-size: 32px;
     color: $white-color;
+    transition: all 0.3s ease;
   }
 
   &:hover {
     .iconify {
-      font-size: 32px;
-      color: $light-beige-color;
+      transform: scale(1.2);
     }
   }
 }

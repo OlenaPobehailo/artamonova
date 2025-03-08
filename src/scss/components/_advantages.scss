@@ -1,11 +1,11 @@
 @use "../variables" as *;
 
 .advantages {
-  padding: 3rem 0;
-  background-color: $light-accent;
+  // padding: 2rem 0;
+  background-color: #f8fafc;
 
   @media (min-width: 768px) {
-    // padding: 5rem 0;
+    // padding: 3rem 0;
   }
 
   h2 {
@@ -56,13 +56,18 @@
         display: flex;
         align-items: center;
         width: fit-content;
-        padding: 12px;
+        padding: 8px;
         border-radius: 8px;
         color: #fff;
         background-color: $light-green-color;
-        font-size: 3rem;
+        font-size: 24px;
         margin: 0 auto 24px;
         transition: all 0.3s ease-in-out;
+
+        @media (min-width: 768px) {
+          font-size: 36px;
+          padding: 12px;
+        }
       }
 
 
