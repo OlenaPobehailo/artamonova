@@ -30,25 +30,6 @@ document.querySelectorAll(".tab-button").forEach((button) => {
   });
 });
 
-// document.getElementById("openSlider").addEventListener("click", function () {
-//   document.getElementById("sliderOverlay").style.display = "flex";
-// });
-// document.getElementById("closeSlider").addEventListener("click", function () {
-//   document.getElementById("sliderOverlay").style.display = "none";
-// });
-
-// var swiper = new Swiper(".swiper-container", {
-//   loop: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
-
 document.querySelectorAll(".openSlider").forEach((button) => {
   button.addEventListener("click", function () {
     document.getElementById(this.dataset.slider).style.display = "flex";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,14 @@
     <header>
         <nav class="nav">
             <div class="nav-container">
-                <button class="burger-menu" id="burger-menu">
+                <button class="burger-menu" id="burger-menu" type="button" aria-label="Відкрити меню">
                     <span class="burger-icon"></span>
                     <span class="burger-icon"></span>
                     <span class="burger-icon"></span>
                 </button>
 
                 <span class="logo">
-                    <a href="/">
+                    <a href="/" aria-label="На головний екран">
                         <!-- <svg width="30" height="30">
                             <use href="./assets/icons/sprite.svg#icon-target"></use>
                         </svg> -->
@@ -49,7 +49,7 @@
         <section id="hero" class="section hero">
             <div class="hero-container">
                 <div class="hero-info">
-                    <h1>ТАРГЕТОЛОГ - ЕКСПЕРТ</h1>
+                    <h1>ТАРГЕТОЛОГ-ЕКСПЕРТ</h1>
                     <p>Digital послуги для розвитку бізнесу</p>
                     <a href="https://t.me/yuliia_artamonova" class="btn" target="_blank">Дізнатися&nbsp;більше</a>
                 </div>
@@ -58,7 +58,7 @@
 
         <section id="about" class="section about">
             <div class="container about-container">
-                <img class="main-photo" src="./assets/images/photo.jpg" alt="">
+                <img class="main-photo" src="./assets/images/photo.jpg" alt="Юлія Артамонова - таргетолог.">
 
                 <div class="about-info">
                     <h2 class="about-title section-title sr-only">Про мене</h2>
@@ -134,7 +134,6 @@
             </div>
         </section>
 
-
         <section id="services" class="section services">
             <div class="container">
                 <h2 class="section-title">Послуги</h2>
@@ -150,47 +149,122 @@
                     </div>
                     <div class="service-info">
                         <h3 class="service-title">Налаштування таргетованої реклами</h3>
+                        <h4>
+                            Розробляю та запускаю рекламні кампанії, які працюють на результат. У налаштування входить:
+                        </h4>
+
                         <ul class="services-list">
                             <li>✔ Аналіз ніші та конкурентів</li>
                             <li>✔ Підбір цільової аудиторії</li>
                             <li>✔ Створення рекламної стратегії та креативів</li>
+                            <li>✔ Налаштування рекламного кабінету</li>
+                            <li>✔ Запуск та тестування рекламних оголошень</li>
+                            <li>✔ Оптимізація та масштабування кампаній</li>
+                            <li>✔ Надання звітів та рекомендацій</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="tab-content service-card" id="consulting">
                     <div class="service-image">
-                        <img src="./assets/images/consulting.svg" alt="Налаштування таргетованої реклами">
+                        <img src="./assets/images/consulting.svg" alt="Консультації з таргету">
                     </div>
                     <div class="service-info">
                         <h3 class="service-title">Консультації з таргету</h3>
                         <ul class="services-list">
-                            <li>✔ Навчання запуску реклами</li>
-                            <li>✔ Аналіз сторінки та рекомендації</li>
-                            <li>✔ Аудит рекламних кампаній</li>
-                            <li>✔ Допомога у розблокуванні кабінету</li>
+                            <li class="service-item service-item-consulting">
+                                <h4>
+                                    ✔ Консультація-навчання
+                                </h4>
+                                <p>
+                                    Якщо ви хочете самостійно запускати рекламу або розібратись у
+                                    її роботі – допоможу вам розібратись, як правильно налаштовувати рекламу, обирати
+                                    аудиторії, аналізувати результати та масштабувати кампанії.</p>
+                            </li>
+                            <li class="service-item service-item-consulting">
+                                <h4>✔ Консультація з упаковки профілю</h4>
+                                <p>Аналіз сторінки, рекомендації щодо контенту, візуалу та офферів для кращої
+                                    конверсії реклами.</p>
+                            </li>
+                            <li class="service-item service-item-consulting">
+                                <h4>✔ Консультація-аудит</h4>
+                                <p>Розберу ваші рекламні кампанії, знайду помилки та дам покрокові рекомендації щодо
+                                    покращення.</p>
+                            </li>
+                            <li class="service-item service-item-consulting">
+                                <h4>
+                                    ✔ Консультація з розблокування рекламного кабінету
+                                </h4>
+                                <p>Якщо Facebook заблокував ваш
+                                    рекламний кабінет, допоможу відновити доступ або створити альтернативний варіант
+                                    роботи.
+                                </p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="tab-content service-card" id="extra">
                     <div class="service-image">
-                        <img src="./assets/images/extra.svg" alt="Налаштування таргетованої реклами">
+                        <img src="./assets/images/extra.svg" alt="Додаткові послуги">
                     </div>
                     <div class="service-info">
                         <h3 class="service-title">Додаткові послуги</h3>
                         <ul class="services-list">
-                            <li>✔ Налаштування чат-боту</li>
-                            <li>✔ Створення рекламних креативів</li>
-                            <li>✔ Розробка рекламної стратегії</li>
+                            <li class="service-item service-item-extra">
+                                <h4>✔ Налаштування чат-боту</h4>
+                                <p>Автоматизація відповідей у Direct та покращення комунікації з
+                                    клієнтами</p>
+                            </li>
+                            <li class="service-item service-item-extra">
+                                <h4>✔ Створення рекламних креативів</h4>
+                                <p>Підбір зображень, написання текстів та створення
+                                    візуалів, що чіпляють.</p>
+
+                            </li>
+                            <li class="service-item service-item-extra">
+                                <h4>✔ Розробка рекламної стратегії</h4>
+                                <p>Детальний план просування для вашого бізнесу, що
+                                    включає воронку продажів, оффери та
+                                    контент-стратегію.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-            </div>
+                <div class="services-target">
+                    <h2 class="section-title">Для кого підходять ці послуги?</h2>
+                    <ul class="target-list">
+                        <li class="target-item">
+                            <span class="target-icon">
+                                <span class="iconify" data-icon="mdi:chart-line"></span>
+                            </span>
+                            <p>
+                                <strong>Для власників бізнесів</strong>, які хочуть масштабувати свій проєкт, збільшити
+                                кількість клієнтів та продажів.
+                            </p>
+                        </li>
+                        <li class="target-item">
+                            <span class="target-icon">
+                                <span class="iconify" data-icon="mdi:school"></span>
+                            </span>
+                            <p>
+                                <strong>Для експертів</strong>, які хочуть розвивати свій блог, залучити нових
+                                підписників та потенційних клієнтів, продати послуги або інфопродукти.
+                            </p>
+                        </li>
+                        <li class="target-item">
+                            <span class="target-icon">
+                                <span class="iconify" data-icon="mdi:bullhorn"></span>
+                            </span>
+                            <p>
+                                <strong>Для власників бізнесів та експертів</strong>, які хочуть самостійно розібратись
+                                у запусках реклами та масштабуватись за допомогою таргетованої реклами.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
         </section>
-
-
 
         <section id="algorithm" class="section algorithm">
             <div class="container">
@@ -263,10 +337,10 @@
                 <h2 class="section-title">Кейси</h2>
                 <div class="button-wrapper">
                     <button class="openSlider case-button" data-slider="slider1">
-                        <img src="./assets/images/slider/case-1-1.jpg" alt="">
+                        <img src="./assets/images/slider/case-1-1.jpg" alt="Кейс - розпис одягу фарбою">
                         <span>Докладніше</span></button>
                     <button class="openSlider case-button" data-slider="slider2">
-                        <img src="./assets/images/slider/case-2-1.jpg" alt="">
+                        <img src="./assets/images/slider/case-2-1.jpg" alt="Кейс - магазин жіночого одягу">
                         <span>Докладніше</span></button>
                 </div>
 
@@ -274,10 +348,15 @@
                     <span class="close-slider">&times;</span>
                     <div class="swiper-container swiper1">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-1.jpg" alt="1"></div>
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-2.jpg" alt="2"></div>
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-3.jpg" alt="3"></div>
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-4.jpg" alt="4"></div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-1.jpg"
+                                    alt="Кейс - розпис одягу фарбою"></div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-2.jpg"
+                                    alt="Розпис  одягу фарбою - результати"></div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-3.jpg"
+                                    alt="Розпис одягу фарбою - задача і результати">
+                            </div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-1-4.jpg"
+                                    alt="Розпис одягу фарбою - відгук замовника"></div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -289,9 +368,12 @@
                     <span class="close-slider">&times;</span>
                     <div class="swiper-container swiper2">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-2-1.jpg" alt="1"></div>
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-2-2.jpg" alt="2"></div>
-                            <div class="swiper-slide"><img src="./assets/images/slider/case-2-3.jpg" alt="3"></div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-2-1.jpg"
+                                    alt="Кейс - магазин жіночого одягу"></div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-2-2.jpg"
+                                    alt="Магазин жіночого одягу - результати"></div>
+                            <div class="swiper-slide"><img src="./assets/images/slider/case-2-3.jpg"
+                                    alt="Магазин жіночого одягу - задача і результати"></div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>

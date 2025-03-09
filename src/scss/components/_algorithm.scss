@@ -31,6 +31,7 @@
         flex-direction: column;
         padding: 16px 36px;
         position: relative;
+        transition: all 0.3s ease-in-out;
 
         @media (min-width: 480px) {
             padding: 24px 48px;
@@ -107,6 +108,7 @@
             font-weight: bold;
             color: #FFFFFF;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
         }
 
         .point-label {
@@ -125,5 +127,12 @@
                 width: 50%;
             }
         }
+    }
+
+    .point:hover .point-index {
+        background: #FFFFFF;
+        color: $blue-color;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        font-size: 32px;
     }
 }
