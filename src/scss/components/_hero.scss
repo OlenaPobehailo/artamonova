@@ -21,7 +21,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("../assets/images/hero-image.jpg") no-repeat center center/cover;
+    background: image-set(url("../assets/images/hero-image.webp") type("image/webp"),
+        url("../assets/images/hero-image.jpg") type("image/jpeg")) no-repeat center center/cover;
     filter: blur(10px);
     z-index: -1;
   }
